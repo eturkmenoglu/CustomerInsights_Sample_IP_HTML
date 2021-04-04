@@ -1,0 +1,168 @@
+﻿@page
+@model CustomerSearchModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+<script type="text/javascript">
+    function reply_click(clicked_id) {
+        location.href = './CustomerProfile?cid=' + clicked_id;
+    }
+</script>
+
+<style>
+    button:hover {
+        background-color: #a0c5e8;
+    }
+</style>
+
+<nav class="navbar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <div class="container-fluid">
+
+
+        <table id="navbartable">
+            <tbody>
+                <tr>
+                    <th style="width: 80%;">
+
+                        <div class="navbar-header">
+
+                            <table id="navbarlefttable">
+                                <tr>
+                                    <th>
+
+                                        <a class="navbar-brand header-collapse" href="#" style="">
+                                            <span class="glyphicon glyphicon-th" style="color: #fff;">
+                                                <!-- glyphicon glyphicon-th -->
+                                            </span>
+                                        </a>
+
+
+                                    </th>
+                                    <th>
+
+                                        <span style="font-family: Segoe UI Light;font-size: 22px;color:white;">Customer Insights</span>
+
+
+                                    </th>
+
+
+                                </tr>
+                            </table>
+
+
+
+
+                        </div>
+                    </th>
+                    <th style="width: 15%;">
+                        <form>
+                            <input type="text" asp-for="SearchString" placeholder="Search Customers.." name="searchterm" style="font-family:'Segoe UI Light';border-radius: 30px;height: 30px;width: 216px; padding-left:10px">
+                            <input type="submit" id="searchbutton" style="background-color: transparent;border-color: transparent;"><span class="glyphicon glyphicon-search" style="color: #fff;"></span>
+                            
+
+                            
+                        </form>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <span class="ms-Icon ms-Icon--CRMReport"></span>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-bars"></i>
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Index">
+                    <span class="material-icons-outlined">
+                        home
+                    </span>
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./CustomerSearch">
+                    <span class="material-icons">
+                        people_outline
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <span class="material-icons">
+                        pie_chart_outline
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-tools"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-body">
+        <div class="row h-auto">
+            <div class="left-bar-body" style="width: 100%;">
+
+                <table>
+                    @* <tr>
+                       <th style="width: 10%; padding-right: 4px; padding-left: 4px;">
+
+                <div class="account-info" style="background:white;height: 100%;">
+                    <div class="account-background"></div>
+                    <div class="account-photo">
+                        <img style="width:50%; height: 50%;" src="/img/account/avatar.gif">
+                    </div>
+                    <div class="account-name" style="font-family: Segoe UI Semibold;font-size: 18px;">Partti Melendez</div>
+
+                    <div class="account-location" style="font-family: Segoe UI ;font-size: 9;">
+                        <h6>1108 23 Ave S</h6>
+                        <h6>Seattle, WA</h6>
+                    </div>
+
+                </div>
+
+
+            </th>
+
+
+        </tr>*@
+
+
+
+
+                    @Html.Raw(System.Web.HttpUtility.HtmlDecode((string)ViewData["customers"]))
+
+
+
+                </table>
+
+               
+
+               
+            </div>   
+        
+        </div>
+
+    </div>
+
+  

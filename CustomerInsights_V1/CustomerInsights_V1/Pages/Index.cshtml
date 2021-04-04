@@ -1,0 +1,593 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <table id="navbarlefttable">
+                <tr>
+                    <th>
+
+                        <a class="navbar-brand header-collapse" href="#" style="">
+                            <span class="glyphicon glyphicon-th" style="color: #fff;">
+                                <!-- glyphicon glyphicon-th -->
+                            </span>
+                        </a>
+
+
+                    </th>
+                    <th>
+
+                        <span style="font-family: Segoe UI Light;font-size: 22px;color:white;">Customer Insights</span>
+
+
+                    </th>
+
+
+                </tr>
+            </table>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <span class="ms-Icon ms-Icon--CRMReport"></span>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-bars"></i>
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Index">
+                    <span class="material-icons-outlined">
+                        home
+                    </span>
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./CustomerSearch">
+                    <span class="material-icons">
+                        people_outline
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./charts">
+                    <span class="material-icons">
+                        pie_chart_outline
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-tools"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-body">
+        <div class="row h-auto">
+            <div class="col-sm-4 left-bar">
+                <h3 style="font-family: Segoe UI;font-size: 24px;">Customers</h3>
+                <div class="left-bar-body">
+                    <div class="account-info" style="background:white;">
+                        <div class="account-background"></div>
+                        <div class="account-photo">
+                            <img src="~/img/account/avatar.gif">
+                        </div>
+                        <div class="account-name" style="font-family: Segoe UI Semibold;font-size: 10;">Partti Melendez</div>
+                        <div class="account-state">
+                            <div class="ico-state state">
+                                <span>
+                                    <i class="bi-bi-headset"></i>
+                                </span>
+                                <span style="font-family: Segoe UI Semibold;font-size: 8;">
+                                    89
+                                </span>
+                            </div>
+                            <div class="text-state state" style="font-family: Segoe UI Semibold;font-size: 8;">
+                                HIGH ENGAGEMENT
+                            </div>
+                        </div>
+                        <div class="account-location" style="font-family: Segoe UI ;font-size: 9;">
+                            <h6>1108 23 Ave S</h6>
+                            <h6>Seattle, WA</h6>
+                        </div>
+                        <div class="account-contact">
+                            <span class="material-icons-outlined">
+                                email
+                            </span>
+                            <i class="fas fa-phone-alt"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="account-data" style="background:white;">
+                        <div class="data-row d-flex position-relative">
+                            <div class="data-img img-1">
+                                <img src="~/img/account/headset.png">
+                            </div>
+                            <div class="datas">
+                                <h4 class="title" style="font-family: Segoe UI Semibold;font-size: 10;">Support Case</h4>
+                                <span class="comment" style="font-family: Segoe UI;font-size: 8;">Loyalty invalid code</span>
+                            </div>
+                            <div class="time">
+                                2020-10-10
+                            </div>
+                        </div>
+                        <div class="data-row d-flex position-relative">
+                            <div class="data-img img-2">
+                                <img src="~/img/account/calendar.png">
+                            </div>
+                            <div class="datas">
+                                <h4 class="title" style="font-family: Segoe UI Semibold;font-size: 10;">Appointment</h4>
+                                <span class="comment" style="font-family: Segoe UI;font-size: 8;">Loyalty invalid code</span>
+                            </div>
+                            <div class="time">
+                                2020-10-10
+                            </div>
+                        </div>
+                        <div class="data-row d-flex position-relative">
+                            <div class="data-img img-3">
+                                <img src="~/img/account/survey.png">
+                            </div>
+                            <div class="datas">
+                                <h4 class="title" style="font-family: Segoe UI Semibold;font-size: 10;">Survey</h4>
+                                <span class="comment" style="font-family: Segoe UI;font-size: 8;">Satisfaction Survey</span>
+                            </div>
+                            <div class="time">
+                                2020-10-10
+                            </div>
+                        </div>
+                        <div class="data-row d-flex position-relative">
+                            <div class="data-img img-4">
+                                <img src="~/img/account/mobile.png">
+                            </div>
+                            <div class="datas">
+                                <h4 class="title" style="font-family: Segoe UI Semibold;font-size: 10;">Mobile Purchase</h4>
+                                <span class="comment" style="font-family: Segoe UI;font-size: 8;">OTC Medicines</span>
+                            </div>
+                            <div class="time">
+                                2020-10-10
+                            </div>
+                        </div>
+                        <div class="data-row d-flex position-relative">
+                            <div class="data-img img-5">
+                                <img src="~/img/account/email.png">
+                            </div>
+                            <div class="datas">
+                                <h4 class="title" style="font-family: Segoe UI Semibold;font-size: 10;">Email</h4>
+                                <span class="comment" style="font-family: Segoe UI;font-size: 8;">Contacted Website</span>
+                            </div>
+                            <div class="time">
+                                2020-10-10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 h-100 pt-56">
+                <div class="row h-100">
+                    <div class="col-sm-6 h-100 second-bar">
+                        <div class="data-block padding-0">
+                            <div class="col col-sm-2 d-flex direction-rtl top-left-button-group">
+                                <span class="material-icons-outlined">
+                                    more_vert
+                                </span>
+                                <span class="material-icons-outlined">
+                                    info
+                                </span>
+                            </div>
+                            <div id="container"></div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="data-block padding-0">
+                            <div class="col col-sm-2 d-flex direction-rtl top-left-button-group">
+                                <span class="material-icons-outlined">
+                                    more_vert
+                                </span>
+                                <span class="material-icons-outlined">
+                                    info
+                                </span>
+                            </div>
+                            <div id="container2"></div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="data-block padding-0">
+                            <div class="col col-sm-2 d-flex direction-rtl top-left-button-group">
+                                <span class="material-icons-outlined">
+                                    more_vert
+                                </span>
+                                <span class="material-icons-outlined">
+                                    info
+                                </span>
+                            </div>
+
+                            <div id="container3"></div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="data-block padding-0">
+                            <div class="col col-sm-2 d-flex direction-rtl top-left-button-group">
+                                <span class="material-icons-outlined">
+                                    more_vert
+                                </span>
+                                <span class="material-icons-outlined">
+                                    info
+                                </span>
+                            </div>
+                            <div id="container4"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 h-100">
+                        <div class="data-block">
+                            <div class="row">
+                                <div class="col col-sm-10 data-block-title" style="font-family: Segoe UI Semibold;font-size: 20px;top: -20px;color:black;">Segments that include Partti Melendez</div>
+                                <div class="col col-sm-2 d-flex direction-rtl">
+                                    <span class="material-icons-outlined">
+                                        more_vert
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        info
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="col col-sm-1">
+                                    <img src="~/img/account/heart.png">
+                                </div>
+                                <div class="col col-sm-7">
+                                    Beauty Enthusiasts
+                                </div>
+                                <div class="col col-sm-4 text-right">
+                                    562,651 members
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="col col-sm-1">
+                                    <img src="~/img/account/leaf.png">
+                                </div>
+                                <div class="col col-sm-7">
+                                    Environmentally Conscious
+                                </div>
+                                <div class="col col-sm-4 text-right">
+                                    212, 034 members
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="col col-sm-1">
+                                    <img src="~/img/account/loyalty.png">
+                                </div>
+                                <div class="col col-sm-7">
+                                    Loyalty Redemption
+                                </div>
+                                <div class="col col-sm-4 text-right">
+                                    132, 723 members
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="col col-sm-1">
+                                    <img src="~/img/account/home.png">
+                                </div>
+                                <div class="col col-sm-7">
+                                    New Movers
+                                </div>
+                                <div class="col col-sm-4 text-right">
+                                    2755 members
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="recommendation data-block">
+                            <div class="row">
+                                <div class="col col-sm-10 data-block-title" style="font-family: Segoe UI Semibold;font-size: 20px;top: -20px;color:black;">Recommendations</div>
+                                <div class="col col-sm-2 d-flex direction-rtl">
+                                    <span class="material-icons-outlined">
+                                        more_vert
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        info
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="recommendation-block">
+                                <div class="recommendation-block-title">Offer "Spend $15 or, get 3000 point" coupon</div>
+                                <div class="recommendation-block-body">
+                                    <div class="w-55 auto-margin text-center">
+                                        <img src="~/img/account/recom1.gif" alt="recom1" class="recommendation-block-img">
+                                        <div class="recommendation-block-comment">
+                                            Buy $15 or more of paticipating comestics and bonus 3000
+                                            point
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recommendation-block">
+                                <div class="recommendation-block-title">Suggestions based on these spending habits</div>
+                                <div class="recommendation-block-body">
+                                    <div class="w-55 auto-margin text-center">
+                                        <img src="~/img/account/recom2.gif" alt="recom1" class="recommendation-block-img">
+                                        <div class="recommendation-block-comment">NEW Face Masks</div>
+                                        <div class="recommendation-block-description">Interested in Weekly Deals</div>
+                                    </div>
+                                    <div class="w-55 auto-margin text-center">
+                                        <img src="~/img/account/recom3.gif" alt="recom1" class="recommendation-block-img">
+                                        <div class="recommendation-block-comment">Shampoo & Condition Pro</div>
+                                        <div class="recommendation-block-description">Frequently purchases bio</div>
+                                        <div class="recommendation-block-description">hair & beauty products</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let chart; // globally available
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     chart = Highcharts.stockChart('container', {
+        //         rangeSelector: {
+        //             selected: 1
+        //         },
+        //         series: [{
+        //             name: 'USD to EUR',
+        //             data: usdtoeur // predefined JavaScript array
+        //        }]
+        //    });
+        // });
+        document.addEventListener('DOMContentLoaded', function () {
+            const chart = Highcharts.chart('container', {
+                chart: {
+                    type: 'bar',
+                    height: 192,
+                    // width: 562
+                },
+                title: {
+                    text: 'Potential Brands',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 20,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                xAxis: {
+                    categories: ['MAC', 'Cosmetics', 'Neutrongena', 'Revion']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Number of enriched profiles',
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'MAC',
+                    data: [
+                        { y: 100, color: '#4993ff' },
+                        { y: 80, color: '#7454c6' },
+                        { y: 75, color: '#d94eaf' },
+                        { y: 75, color: '#f69b6c' },
+                    ]
+                }]
+            });
+            const chart2 = Highcharts.chart('container2', {
+                chart: {
+                    type: 'bar',
+                    height: 192,
+                    // width: 562
+                },
+                title: {
+                    text: 'Interests',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 20,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                xAxis: {
+                    categories: ['Pharmacy', 'Photo & Video', 'Cosmetics', 'Healthcare']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Number of enriched profiles',
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'MAC',
+                    data: [
+                        { y: 100, color: '#4993ff' },
+                        { y: 50, color: '#7454c6' },
+                        { y: 110, color: '#d94eaf' },
+                        { y: 70, color: '#f69b6c' },
+                    ]
+                }]
+            });
+
+            Highcharts.chart('container3', {
+                chart: {
+                    type: 'area',
+                    height: 192,
+                    // width: 562
+                },
+                accessibility: {
+                    description: 'Image description: An area chart compares the nuclear stockpiles of the USA and the USSR/Russia between 1945 and 2017. The number of nuclear weapons is plotted on the Y-axis and the years on the X-axis. The chart is interactive, and the year-on-year stockpile levels can be traced for each country. The US has a stockpile of 6 nuclear weapons at the dawn of the nuclear age in 1945. This number has gradually increased to 369 by 1950 when the USSR enters the arms race with 6 weapons. At this point, the US starts to rapidly build its stockpile culminating in 32,040 warheads by 1966 compared to the USSR’s 7,089. From this peak in 1966, the US stockpile gradually decreases as the USSR’s stockpile expands. By 1978 the USSR has closed the nuclear gap at 25,393. The USSR stockpile continues to grow until it reaches a peak of 45,000 in 1986 compared to the US arsenal of 24,401. From 1986, the nuclear stockpiles of both countries start to fall. By 2000, the numbers have fallen to 10,577 and 21,000 for the US and Russia, respectively. The decreases continue until 2017 at which point the US holds 4,018 weapons compared to Russia’s 4,500.'
+                },
+                title: {
+                    text: 'Churn Risk',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 20,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                subtitle: {
+                    text: '73.8%',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 24,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                xAxis: {
+                    categories: ['Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov']
+                },
+                yAxis: {
+                    title: false,
+                    labels: {
+                        formatter: function () {
+                            return this.value / 1000 + 'k';
+                        }
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+                },
+                // plotOptions: {
+                //   area: {
+                //     pointStart: 1940,
+                //     marker: {
+                //       enabled: false,
+                //       symbol: 'circle',
+                //       radius: 2,
+                //       states: {
+                //         hover: {
+                //           enabled: true
+                //         }
+                //       }
+                //     }
+                //   }
+                // },
+                series: [{
+                    name: 'John',
+                    data: [0, 1, 4, 4, 5, 2]
+                }],
+            });
+
+
+            Highcharts.chart('container4', {
+                chart: {
+                    type: 'column',
+                    // width: 562,
+                    height: 192
+                },
+                title: {
+                    text: 'Customer Lifetime Value',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 20,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                subtitle: {
+                    text: '$15000',
+                    align: 'left',
+                    x: 5,
+                    style: {
+                        fontSize: 24,
+                        fontFamily: 'Segoe UI Semibold',
+                        color: 'Black'
+                    }
+                },
+                accessibility: {
+                    announceNewData: {
+                        enabled: true
+                    }
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    title: false
+
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        borderWidth: 0,
+                        dataLabels: {
+                            enabled: false,
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: "Browsers",
+                        colorByPoint: true,
+                        data: [
+                            {
+                                name: "$1000",
+                                y: 1000,
+                                drilldown: "Chrome",
+                                color: '#d1cbef',
+                            },
+                            {
+                                name: "$5000",
+                                y: 5000,
+                                drilldown: "Firefox",
+                                color: '#d1cbef',
+                            },
+                            {
+                                name: "$10000",
+                                y: 10000,
+                                drilldown: "Internet Explorer",
+                                color: '#d1cbef',
+                            },
+                            {
+                                name: "$15000",
+                                y: 15000,
+                                drilldown: "Safari",
+                                color: '#7a5bc8',
+                            },
+                            {
+                                name: "$10000 ",
+                                y: 10000,
+                                drilldown: "Edge",
+                                color: '#d1cbef',
+                            },
+                            {
+                                name: "$5000 ",
+                                y: 5000,
+                                drilldown: "Opera",
+                                color: '#d1cbef',
+                            },
+                            {
+                                name: "$1000 ",
+                                y: 1000,
+                                drilldown: null,
+                                color: '#d1cbef',
+                            }
+                        ]
+                    }
+                ],
+            });
+        });
+    </script>
