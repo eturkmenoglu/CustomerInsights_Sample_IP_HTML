@@ -1,3 +1,4 @@
+[CustomerInsights_HTML_Screenshot](https://github.com/eturkmenoglu/CustomerInsights_Sample_IP_HTML/blob/master/screenshot.png?raw=true)
 This is a Sample HTML/.NET based First Customer Insights Web Project. In other-words IP on top of CI. 
 
 Where, It is connected to Customer Insights API, and consumes customer details and shows them in a custom UI as one wishes.
